@@ -8,51 +8,110 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <nav class="header__menu menu" role="navigation">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#home" class="menu__link underline">HOME</a>
+    <div class="scroll">
+      <header class="header">
+        <div class="header_logo"></div>
+        <nav class="header__nav nav">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">HOME</a>
             </li>
-            <li class="menu__item">
-              <a href="#about" class="menu__link underline">ABOUT</a>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">ABOUT</a>
             </li>
-            <li class="menu__item">
-              <a href="#projects" class="menu__link underline">PROJECTS</a>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">PROJECTS</a>
             </li>
-            <li class="menu__item">
-              <a href="#contact" class="menu__link underline">CONTACT</a>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">CONTACT</a>
             </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
-      </div>
-    </header>
-    <main class="main scroll">
-      <section class="home" id="home">
-        <div class="home__container _container">
-          <h1>HOME</h1>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <div class="about__container _container">
-          <h1>ABOUT</h1>
-        </div>
-      </section>
-      <section class="projects" id="projects">
-        <div class="projects__container _container">
-          <h1>PROJECTS</h1>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="contact__container _container">
-          <footer class="footer">
-            <div class="footer__container">
-              <h5>&#169; 2022 | Developed and designed by Mikhail Sova</h5>
+      </header>
+      <main class="main">
+        <div class="toggler">
+          <div class="img_container">
+            <div class="sun_container">
+              <img class="sun" src="./images/icons/sun.png" alt="" />
             </div>
-          </footer>
+            <div class="moon_container">
+              <img class="moon" src="./images/icons/crescent-moon.png" alt="" />
+            </div>
+            <div class="ball"></div>
+          </div>
         </div>
-      </section>
-    </main>
+        <div class="space"></div>
+        <section class="home" id="home">
+          <div class="home__container _container">
+            <div class="text__container">
+              <h2>Greeting Title</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                perferendis, quisquam dicta veritatis ad similique accusantium
+                harum adipisci eos
+              </p>
+            </div>
+            <button class="btn__my-projects">My Projects</button>
+          </div>
+        </section>
+        <div class="space"></div>
+        <section class="about" id="about">
+          <div class="about__container _container"></div>
+        </section>
+        <div class="space"></div>
+        <section class="projects" id="projects">
+          <div class="projects__container _container">
+            <div class="projects__grid">
+              <div class="from-left">1</div>
+              <p class="from-right">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                distinctio architecto eligendi, exercitationem possimus aperiam
+                ea ipsum, sint voluptate dolores consectetur, deserunt ipsa
+                totam sunt? Eligendi, maxime sapiente. Qui, nemo!
+              </p>
+            </div>
+            <div class="projects__grid">
+              <div class="from-left">2</div>
+              <p class="from-right">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                distinctio architecto eligendi, exercitationem possimus aperiam
+                ea ipsum, sint voluptate dolores consectetur, deserunt ipsa
+                totam sunt? Eligendi, maxime sapiente. Qui, nemo!
+              </p>
+            </div>
+            <div class="projects__grid">
+              <div class="from-left">3</div>
+              <p class="from-right">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                distinctio architecto eligendi, exercitationem possimus aperiam
+                ea ipsum, sint voluptate dolores consectetur, deserunt ipsa
+                totam sunt? Eligendi, maxime sapiente. Qui, nemo!
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="space"></div>
+        <section class="contact" id="contact">
+          <div class="contact__container _container">
+            <h1 class="contact__title">CONTACT ME</h1>
+            <div class="feedback__container">
+              <div class="feedback_form"></div>
+              <div class="feedback_"></div>
+            </div>
+            <footer class="footer">
+              <div class="footer__container">
+                <h5>&#169; 2022 | Developed and designed by Mikhail Sova</h5>
+              </div>
+            </footer>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
